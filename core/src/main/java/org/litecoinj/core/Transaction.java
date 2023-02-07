@@ -673,7 +673,7 @@ public class Transaction extends ChildMessage {
         }
         if (flags != 0) {
             // Unknown flag in the serialization
-            throw new ProtocolException("Unknown transaction optional data");
+            //throw new ProtocolException("Unknown transaction optional data");
         }
         // lock_time
         lockTime = readUint32();
